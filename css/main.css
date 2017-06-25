@@ -1,0 +1,313 @@
+/* Common CSS */
+/*
+* {
+    box-sizing: border-box;
+}
+*/
+
+body {
+    margin: 0px;
+    font-family: arial;
+    background: #f6f6f6;
+}
+
+/*
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+*/
+
+/*
+#container {
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0px auto;
+}
+*/
+
+/* Layout */
+#header {
+    background: rgba(0,0,0,0.6);
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 1000;
+}
+
+.title {
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 20px;
+    text-align: center;
+    color: chocolate;
+}
+.title:after {
+    content: "";
+    border: 2px solid #000;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    width: 50px;
+    margin-left: -25px;
+}
+
+#banner {
+    position: relative;
+}
+#banner img {
+    width: 100%;
+    min-height: 600px;
+}
+#banner .form {
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+#banner .wrapper {
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+#banner .inner-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.form ul {
+    margin: 0px auto;
+    padding: 25px 0px;
+    list-style: none;
+    background:rgba(212, 207, 207, 0.69);
+    width: 80%;
+}
+
+.form ul li {
+    display: inline-block;
+    margin: 0px 15px;
+}
+
+.form input[type="text"], .form input[type="date"] {
+    height: 35px;
+    padding: 0px 15px;
+    width: 200px;
+    border: 1px solid #f0f0f0;
+    background: #f0f0f0;
+}
+
+.form input[type="text"]:focus, .form input[type="date"]:focus {
+    border: 3px solid red;
+}
+
+#main-navigation {
+    float: right;
+    width: 50%;
+    padding-top: 30px;
+}
+#main-navigation ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+#main-navigation ul li {
+    display: inline-block;
+    margin: 0px 15px;
+}
+#main-navigation ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+#content {
+    
+}
+
+#main h2,p,img{
+    text-align: center;
+}
+
+#footer {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+
+/** Specific **/
+.logo {
+    float: left;
+    width: 30%;
+}
+
+
+/**** home ****/
+#home {
+    padding: 50px 0px;
+    text-align: center;
+}
+#home h2 {
+    text-transform: uppercase;
+}
+#home .column {
+    float: left;
+    width: 30%;
+    padding: 0px 10px;
+}
+#home .column img {
+    width: 100%;
+}
+#home .desc {
+    padding: 12px;
+    background: #fff;
+}
+#home .desc a {
+    text-decoration: none;
+}
+#home .image {
+    position: relative;
+    overflow: hidden;
+}
+#home .image:after {
+    content: "";
+    background: rgba(255,255,255,0.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: -100%;
+    left: 0px;
+    opacity: 0;
+    transition: 1s;
+}
+#home .image:hover:after {
+    opacity: 1;
+    bottom: 0%;
+    transition: 1s;
+}
+#home .image .read-more {
+    position: absolute;
+    top: 0px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    opacity: 0;
+    top: -100%;
+}
+#home .read-more p {
+    font-size: 20px;
+    line-height: 24px;
+    color: red;
+    transition: 1.5s;
+}
+#home .image:hover .read-more {
+    opacity: 1;
+    top: 0%;
+    transition: 1.5s;
+}
+
+/************wedding**************/
+/*
+#weddding {
+    padding:0px 0px;
+    text-align: center;
+}
+#wedding h2 {
+    text-transform: uppercase;
+    text-align: center;
+}
+#wedding .column {
+    float: left;
+    width: 100%;
+    padding: 0px 0px;
+}
+#wedding .column img {
+    width: 100%;
+}
+#wedding .desc {
+    padding: 12px;
+    background: #fff;
+}
+#wedding .desc a {
+    text-decoration: none;
+}
+#wedding .image {
+    position: relative;
+    overflow: hidden;
+}
+#wedding .image:after {
+    content: "";
+    background: rgba(255,255,255,0.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 1s;
+}
+#wedding .image:hover:after {
+    opacity: 1;
+    bottom: 0%;
+    transition: 1s;
+}
+#weddiing .image .read-more {
+    position: absolute;
+    top: 0px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    opacity: 0;
+    top: -100%;
+}
+#wedding .read-more p {
+    font-size: 20px;
+    line-height: 24px;
+    color: red;
+    transition: 1.5s;
+}
+#wedding .image:hover .read-more {
+    opacity: 1;
+    top: 0%;
+    transition: 1.5s;
+}
+*/
+
+
+.sociable ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.sociable ul li {
+    display: inline-block;
+    font-size: 20px;
+    background: red;
+    padding: 4px 0px 0px 0px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+}
+.sociable ul li.fb {
+    background: #3B5998;
+    color: #fff;
+}
+.sociable ul li.fb a {
+    color: #fff;
+}
+
+.button1 {
+    font-size: 16px;
+    min-width: 200px;
+    height: 35px;
+    background: #F8AB00;
+    border: 1px solid #F8AB00;
+    margin-top: 30px;
+    color: #fff;
+}
