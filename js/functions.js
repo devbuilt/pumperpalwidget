@@ -37,3 +37,8 @@
       }, 300);
    });
 })(jQuery);
+
+// C
+$(function () {
+                $('#datetimepicker1').datetimepicker();
+            });
